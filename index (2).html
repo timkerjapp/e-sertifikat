@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>E Sertifikat Tim Kerja Pembelajaran dan Penilaian</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="page">
+
+  <header class="masthead">
+    <div class="masthead__crest" aria-hidden="true">
+      <img src="logo.png" alt="Logo Kemendikdasmen" width="34" height="34">
+    </div>
+    <div>
+      <p class="eyebrow">E-Sertifikat</p>
+      <p class="eyebrow eyebrow--sub">Cek &amp; unduh sertifikat kegiatan</p>
+    </div>
+  </header>
+
+  <h1 class="title">E Sertifikat Tim Kerja Pembelajaran dan Penilaian</h1>
+  <p class="subtitle">Pilih kegiatan, lalu pilih nama peserta untuk melihat dan mengunduh sertifikatnya. Tidak perlu login.</p>
+
+  <label for="kegiatanSelect">Kegiatan</label>
+  <select id="kegiatanSelect">
+    <option value="">Memuat daftar kegiatan…</option>
+  </select>
+
+  <div id="pesertaWrap" style="display:none;">
+    <label for="pesertaSelect">Nama Peserta</label>
+    <select id="pesertaSelect">
+      <option value="">-- Pilih nama --</option>
+    </select>
+  </div>
+
+  <div id="viewerWrap" class="viewer" style="display:none;">
+    <div class="card">
+      <p style="margin:0 0 4px;font-weight:600;color:var(--navy);" id="fileNameLabel"></p>
+      <iframe id="pdfFrame" src=""></iframe>
+      <div class="viewer-actions">
+        <a id="downloadBtn" class="btn secondary" href="#" target="_blank" rel="noopener">Unduh PDF</a>
+      </div>
+    </div>
+  </div>
+
+  <p id="emptyState" class="hint" style="display:none;"></p>
+  <p id="errorState" class="hint" style="display:none;color:var(--red);"></p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
