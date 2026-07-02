@@ -2,7 +2,7 @@
 // GANTI INI sesuai link deployment "Publik" Apps Script lo.
 // Ambil dari: Deploy > Manage deployments > Web app URL
 // ============================================================
-const API_URL = 'https://script.google.com/macros/s/GANTI_DENGAN_ID_DEPLOYMENT_LO/exec';
+const API_URL = 'https://script.google.com/macros/s/AKfycbzKo7AF-oo1Cp-owqO9Y_9c6hxttZ1S_LRCeRCjxVJ4o52RimiCFj7PI339gySFu60/exec';
 
 const kegiatanSelect = document.getElementById('kegiatanSelect');
 const pesertaSelect = document.getElementById('pesertaSelect');
